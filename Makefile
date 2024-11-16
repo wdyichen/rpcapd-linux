@@ -3,7 +3,8 @@
 ################################
 
 CC      = gcc
-CFLAGS  = -pthread -D_DEBUG -g -Wall -DHAVE_REMOTE -DHAVE_SNPRINTF -static
+#CFLAGS  = -pthread -D_DEBUG -g -Wall -DHAVE_REMOTE -DHAVE_SNPRINTF -static
+CFLAGS  = -pthread -D_DEBUG -g -Wall -DHAVE_REMOTE -DHAVE_SNPRINTF -DHAVE_CONFIG_H
 #flags for debugging: -D_DEBUG -g -Wall
 
 INCLUDE = -Ilibpcap/

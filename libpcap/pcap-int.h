@@ -36,6 +36,9 @@
 #ifndef pcap_int_h
 #define	pcap_int_h
 
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
 #include <pcap/pcap.h>
 
 #ifdef __cplusplus

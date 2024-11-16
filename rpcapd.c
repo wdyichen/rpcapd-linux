@@ -59,7 +59,7 @@
 char hostlist[MAX_HOST_LIST + 1];		//!< Keeps the list of the hosts that are allowed to connect to this server
 struct active_pars activelist[MAX_ACTIVE_LIST];		//!< Keeps the list of the hosts (host, port) on which I want to connect to (active mode)
 int nullAuthAllowed;					//!< '1' if we permit NULL authentication, '0' otherwise
-SOCKET sockmain;						//!< keeps the main socket identifier
+static SOCKET sockmain;						//!< keeps the main socket identifier
 char loadfile[MAX_LINE + 1];			//!< Name of the file from which we have to load the configuration
 int passivemode= 1;						//!< '1' if we want to run in passive mode as well
 struct addrinfo mainhints;				//!< temporary struct to keep settings needed to open the new socket
